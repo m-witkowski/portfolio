@@ -1,2 +1,2 @@
 # portfolio
-m-witkowski.github.io/index.html
+https://m-witkowski.github.io/portfolio/index.html
