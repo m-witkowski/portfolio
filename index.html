@@ -5,55 +5,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Michał Witkowski -- Portfolio</title>
+    <title>Portoflio Michał Witkowski</title>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Font -->
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700&display=swap');
-    </style>
-    <script src="https://kit.fontawesome.com/8c4fcb70ac.js"></script>
-</head>
-<!-- Custom CSS -->
-<link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container-fluid" id="mainBody">
-        <nav class="row nav justify-content-end align-items-end pb-3">
-            <a href="" class="nav-link justify-start mr-auto ml-5" id="devLink"><i class="fas fa-laptop-code"></i>
-                Dev</a>
-            <a href="" class="nav-link">About Me</a>
-            <a href="" class="nav-link">Skills</a>
-            <a href="" class="nav-link">Portfolio</a>
-            <a href="" class="nav-link mr-5">Contact</a>
-        </nav>
-        <div class="row welcome">
-            <div class="insideWelcome">
-                <h1 id="h1Welcome">Welcome!</h1>
-                <h2 id="h2Name">My name is Michael.</h2>
-                <h2 id="h2Icons">
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-facebook"></i>
-                </h2>
-            </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand ml-5" href="#"><i class="fa fa-code"></i>Dev</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portoflio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <!-- WELOCME -->
+    <section class="welcome">
+        <div class="container-fluid">
+            <h1 id="displayWelcome" class="display-1">Welcome!</h1>
+            <h2 class style="font-weight: bold">My name is Michael.</h2>
+            <h3 class style="padding-top: 3vh">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+            </h3>
+        </div>
+    </section>
+    <!-- BUTTONS -->
+    <section class="container-fluid">
         <div class="row buttons">
             <div>
                 <p>I am happy to help you with any problem!</p>
-                <button type="button" class="btn btn contact">Contact me!</button>
-                <button type="button" class="btn btn cv">Check my CV!</button>
+                <button type="button" class="btn">Contact me!</button>
+                <button type="button" class="btn">Check my CV!</button>
             </div>
         </div>
-        
-    </div>
-    </div>
+    </section>
 
+    <!-- ABOUT ME -->
+    <section class="container-fluid mb-5 aboutMe">
+        <div>
+            <h2 class="display-6 h2Table">About Me</h2>
+        </div>
+        <div class="row table">
+            <div class="col-md-2">
+                <img class="avatar" src="pancake.jpg" alt="">
+            </div>
+            <div class="col-md-3">
+                <span class="details">
+                    <p>Full Name: <span class="pColor"> Michał Witkowski</span></p>
+                    <p>Age: <span class="pColor">21 Years</span></p>
+                    <p>Profile: <span class="pColor">Fullstack</span></p>
+                    <p>Telephone: <span class="pColor">+48 501 863 678</span></p>
+                    <p>E-mail: <span class="pColor">mwitkowski97@icloud.com</span></p>
+                </span>
 
-    <!-- Bootstrap JS -->
+            </div>
+            <div class="col-md-7 aboutLorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eum nam
+                dolores, facere quod ratione voluptatibus impedit consequuntur sunt! Illum eaque nemo, dolores dolor
+                maiores enim iste molestiae facilis repellendus minus inventore quisquam! Aperiam labore, eaque adipisci
+                dignissimos non modi! Iusto minima eos in dolores ipsum ad eligendi. Ipsum, quae.</div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="container-fluid mb-5 skills">
+        <div>
+            <h2 class="display-6 h2Table" style="margin-left: 40vw">Skills</h2>
+        </div>
+        <div class="row table align-items-center skillDiv">
+            <div class="col-4"><img src="ux.svg" alt="">
+                <p class="pColor">UX/UI</p>
+                <p>Figma</p>
+            </div>
+            <div class="col-4 borders"><img src="front.svg" alt="">
+                <p class="pColor">Front End</p>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="col-4"><img src="software.svg" alt="">
+                <p class="pColor">Back End</p>
+                <p>node.js</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="container-fluid portfolio">
+        <div>
+            <h2 class="display-6 h2Table" style="margin-left:45vw;">Portfolio</h2>
+        </div>
+        <div class="row" style="margin: 0">
+            <div class="col-md-4 portfolioItem portfolioItem1">
+                <div class="overImage">
+                    <h2 class="display-6 imgDisplay">Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempora consequatur odio ad nemo
+                        autem eius dicta cumque pariatur quos?
+                    </p>
+                    <div class="d-flex justify-content-start">
+                        <button class="buttonView">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 portfolioItem portfolioItem2"></div>
+            <div class="col-md-4 portfolioItem portfolioItem3"></div>
+        </div>
+        <div class="row" style="margin: 0">
+            <div class="col-md-5 portfolioItem portfolioItem4"></div>
+            <div class="col-md-7 portfolioItem portfolioItem5">
+                <div class="overImage">
+                    <h2 class="display-5 imgDisplay">Design project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempora consequatur odio ad nemo
+                        autem eius dicta cumque pariatur quos?
+                    </p>
+                    <div class="d-flex justify-content-start">
+                        <button class="buttonView">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT ME -->
+    <section class="container-fluid contactMe">
+        <div>
+            <h2 class="display-6 h2Table">Contact Me</h2>
+        </div>
+        <div class="container-fluid contactBox row" style="margin: 0 6vw">
+            <div class="col-5 colorBox">
+                <img src="message.svg" alt="" class="mailIcon" style="filter: invert(100%)">
+                <p class="pContact1">Please describe your question. Send me a message and I will answear you as soon as
+                    possible!</p>
+                <p class="pContact2">
+                    <span class='linksContact'>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a></span><br>
+                    <span style="font-weight: bold">Michał Witkowski</span><br>
+                    <span style="font-weight: bold">Poland, Wrocław</span><br>
+                    +48 501-863-678<br>
+                    <span style="text-decoration: underline">mwitkowski97@icloud.com</span>
+                </p>
+            </div>
+            <div class="col-7 formBox" style="padding: 0;">
+                <div class="h2Div">
+                    <div class="triangle"></div>
+                    <h2 id="h2Form" class="display-6">Let's start!</h2>
+                </div>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Your e-mail adress">
+                    <input type="text" placeholder="Topic">
+                    <input id="message" type="text" placeholder="Message">
+                    <div class="d-flex justify-content-end">
+                        <input id="submitButton" type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyrights © 2019 Michał Witkowski </p>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

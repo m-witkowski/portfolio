@@ -1,64 +1,78 @@
-body {
-    margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
-    background-color: white;
+:root {
+    --main-color: rgb(12, 125, 170);
+    --secondary-color: rgb(41, 183, 240);
+    --text-color: #515151;
+    --bg-secondary: #FAFAFF;
+    --shadow: 0px 0px 10px 0.1px rgba(0, 0, 0, 0.1);
+    --input-shadow:  0px 0px 15px 1px rgba(0,0,0,0.5);
+    --transparent-bg: linear-gradient(rgb(12, 125, 170,0.1)0%,rgb(12, 125, 170,0.4)100%);
+    --button-color: linear-gradient(to right, var(--main-color), var(--secondary-color));
 }
 
-#mainBody {
-    height: 100vh;
-    width: 100vw;
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-color);
+}
+
+.container-fluid {
     padding: 0;
 }
 
-nav {
-    margin: 0;
-    height: 12.3vh;
-    width: auto;
-    background-color: white;
-}
-
-a {
-    color: #515151;
+/* NAVBAR */
+.navbar {
+    min-height: 12vh;
     font-weight: bold;
-    transition: all 0.5s;
 }
 
-a:hover {
-    color: rgb(12, 125, 170);
-    transition: all 0.5s;
+.navbar a {
+    color: var(--text-color) !important;
 }
 
-#devLink {
-    font-size: 1.5em;
+.navbar a:hover {
+    color: var(--main-color) !important;
 }
 
+nav {
+    background: white !important;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+/* WELCOME */
 .welcome {
-    height: 76vh;
-    width: 100wv;
-    background: url(photo1.jpeg);
-    background-size: cover;
-    background-position-y: center;
+    padding-top: 12vh;
+}
+
+.welcome>div {
+    background-image: url(photo1.jpeg);
     align-items: top;
     justify-content: center;
+    height: 80vh;
+    width: auto;
+    background-size: cover;
+    background-position-y: center;
     text-align: center;
+    color: white;
 }
 
-#h1Welcome {
+.welcome a {
+    color: white;
+}
+
+.welcome a:hover {
+    color: var(--main-color);
+}
+
+#displayWelcome {
+    color: var(--main-color);
     padding-top: 10vh;
-    color: rgb(12, 125, 170);
-    font-weight: bold;
-    font-size: 5em;
-}
-
-#h2Name {
-    color: white;
     font-weight: bold;
 }
 
-#h2Icons {
-    color: white;
-}
-
+/* BUTTONS */
 .buttons {
     height: 26vh;
     width: 100vw;
@@ -73,8 +87,8 @@ a:hover {
 
 .buttons button {
     color: white;
-    background: linear-gradient(to right, rgb(12, 125, 170), rgb(82, 199, 245));
-    border: 0.1px solid rgb(12, 125, 170);
+    background: var(--button-color);
+    border: 0.1px solid var(--main-color);
     margin: 0 2vw;
     padding: 1.5vh 3vw;
     font-weight: bold;
@@ -84,6 +98,285 @@ a:hover {
 
 .buttons button:hover {
     background: white;
-    color: rgb(12, 125, 170);
+    color: var(--main-color);
     transition: all 0.5s;
+}
+
+/* ABOUTME */
+.aboutMe {
+    height: 56vh;
+    width: 100vw;
+    background: linear-gradient(90deg, var(--bg-secondary) 65%, white 65%);
+}
+
+.h2Table {
+    width: 100vh;
+    margin-left: 8vw;
+    padding-top: 2vh;
+    font-weight: bold;
+}
+
+.table {
+    height: 40vh;
+    width: 88vw;
+    background: white;
+    margin: 0 6vw;
+    box-shadow: var(--shadow);
+    overflow: auto;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.aboutLorem {
+    font-size: 1.1em;
+    line-height: 2em;
+    padding-right: 4vw;
+    align-self: center;
+    border-left: 3px dotted var(--secondary-color);
+}
+
+.details {
+    padding-top: 7.5vh;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.avatar {
+    height: 15vh;
+    width: 15vh;
+    object-fit: cover;
+    position: relative;
+    top: 4vh;
+    left: 4vh;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+}
+
+/* SKILLS */
+.skills {
+    height: 56vh;
+    width: 100vw;
+    background: linear-gradient(90deg, white 35%, var(--bg-secondary)35%);
+}
+
+.skillDiv div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillDiv img {
+    height: 12vh;
+    width: 12vw;
+}
+
+.borders {
+    border-left: 3px dotted var(--secondary-color);
+    border-right: 3px dotted var(--secondary-color);
+}
+
+.skillDiv p {
+    font-size: 1.1em;
+}
+
+.pColor {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* PORTFOLIO */
+.portfolio {
+    height: 90vh;
+    width: 100vw;
+    overflow: scroll;
+}
+
+.overImage{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: var(--transparent-bg);
+    padding: 5vh;
+}
+
+.buttonView{
+    border-radius: 50px;
+    background: var(--button-color);
+    border: 0px;
+    padding: 1vh 4vh;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.buttonView:hover{
+    background: white;
+    color: var(--main-color);
+    transition: all 0.5s;
+}
+
+.imgDisplay{
+    font-weight: bold;
+}
+
+.portfolioItem{
+    margin: 0;
+    padding: 0; 
+    height: 40.9vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolioItem1{
+    background-image: url(portfolio1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolioItem2{
+    background-image: url(portfolio5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.portfolioItem3{
+    background-image: url(portfolio3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.portfolioItem4{
+    background-image: url(portfolio4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.portfolioItem5{
+    background-image: url(portfolio2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* CONTACT ME */
+
+.contactMe {
+    height: 90vh;
+    width: 100vw;
+    background: var(--bg-secondary);
+}
+
+.contactBox {
+    width: 90vw;
+    height: 70vh;
+    background: white;
+    box-shadow: var(--shadow);
+}
+
+.contactBox a {
+    color: white;
+}
+
+.contactBox a:hover {
+    color: var(--secondary-color);
+}
+
+.colorBox {
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+    overflow: scroll;
+}
+
+.pContact1 {
+    margin: 5vh 15vw 10vh 2vw;
+}
+
+.pContact2 {
+    margin: auto 15vw auto 2vw;
+}
+
+.linksContact {
+    font-size: 1.5em;
+}
+
+.mailIcon {
+    height: 10vh;
+    margin: 2vh auto auto 2vw;
+}
+
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 25px;
+    border-color: transparent transparent transparent var(--main-color);
+}
+
+.h2Div {
+    margin-top: 5vh;
+}
+
+#h2Form {
+    font-weight: bold;
+    position: relative;
+    bottom: 5vh;
+    left: 5vh;
+}
+
+form {
+    padding: 0 5vh;
+}
+
+form input {
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    border: 0px;
+    background: var(--bg-secondary);
+    box-shadow: var(--shadow);
+    outline: none;
+    transition: all 1s;
+    padding: 1vw;
+}
+
+form input:focus {
+    box-shadow: var(--input-shadow);
+    transition: all 1s;
+}
+
+#message {
+    height: 14vh;
+}
+
+#submitButton {
+    width: 8vw;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    background: var(--button-color);
+    transition: all 0.5s;
+    border-radius: 50px;
+}
+
+#submitButton:hover {
+    background: white;
+    color: var(--main-color);
+    transition: all 0.5s;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+}
+
+footer p {
+    align-self: center;
+    margin: 0 auto;
 }
