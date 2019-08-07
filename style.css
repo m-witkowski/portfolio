@@ -23,6 +23,7 @@ body {
 .navbar {
     min-height: 12vh;
     font-weight: bold;
+    padding: 0 !important;
 }
 
 .navbar a {
@@ -51,7 +52,6 @@ nav {
     align-items: top;
     justify-content: center;
     height: 80vh;
-    width: 100vw;
     background-size: cover;
     background-position-y: center;
     text-align: center;
@@ -60,6 +60,7 @@ nav {
 
 .welcome a {
     color: white;
+    font-size: 2vw;
 }
 
 .welcome a:hover {
@@ -110,7 +111,6 @@ nav {
 }
 
 .h2Table {
-    width: 100vh;
     margin-left: 8vw;
     padding-top: 2vh;
     font-weight: bold;
@@ -317,6 +317,7 @@ nav {
     border-style: solid;
     border-width: 20px 0 20px 25px;
     border-color: transparent transparent transparent var(--main-color);
+    display: inline-block;
 }
 
 .h2Div {
@@ -324,10 +325,12 @@ nav {
 }
 
 #h2Form {
+    display: inline-block;
     font-weight: bold;
-    position: relative;
-    bottom: 5vh;
-    left: 5vh;
+    padding-left: 1vh;
+    /* position: relative; */
+    /* bottom: 5vh;
+    left: 5vh; */
 }
 
 form {
