@@ -4,8 +4,8 @@
     --text-color: #515151;
     --bg-secondary: #FAFAFF;
     --shadow: 0px 0px 10px 0.1px rgba(0, 0, 0, 0.1);
-    --input-shadow:  0px 0px 15px 1px rgba(0,0,0,0.5);
-    --transparent-bg: linear-gradient(rgb(12, 125, 170,0.1)0%,rgb(12, 125, 170,0.4)100%);
+    --input-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
+    --transparent-bg: linear-gradient(rgb(12, 125, 170, 0.1)0%, rgb(12, 125, 170, 0.4)100%);
     --button-color: linear-gradient(to right, var(--main-color), var(--secondary-color));
 }
 
@@ -51,7 +51,7 @@ nav {
     align-items: top;
     justify-content: center;
     height: 80vh;
-    width: auto;
+    width: 100vw;
     background-size: cover;
     background-position-y: center;
     text-align: center;
@@ -122,7 +122,7 @@ nav {
     background: white;
     margin: 0 6vw;
     box-shadow: var(--shadow);
-    overflow: auto;
+    overflow: hidden;
     text-overflow: ellipsis;
     word-wrap: break-word;
 }
@@ -191,10 +191,10 @@ nav {
 .portfolio {
     height: 90vh;
     width: 100vw;
-    overflow: scroll;
+    overflow: hidden;
 }
 
-.overImage{
+.overImage {
     width: 100%;
     height: 100%;
     color: white;
@@ -202,7 +202,7 @@ nav {
     padding: 5vh;
 }
 
-.buttonView{
+.buttonView {
     border-radius: 50px;
     background: var(--button-color);
     border: 0px;
@@ -212,46 +212,49 @@ nav {
     transition: all 0.5s;
 }
 
-.buttonView:hover{
+.buttonView:hover {
     background: white;
     color: var(--main-color);
     transition: all 0.5s;
 }
 
-.imgDisplay{
+.imgDisplay {
     font-weight: bold;
 }
 
-.portfolioItem{
+.portfolioItem {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     height: 40.9vh;
     width: 100%;
     object-fit: cover;
 }
 
-.portfolioItem1{
+.portfolioItem1 {
     background-image: url(portfolio1.jpeg);
     background-size: cover;
     background-position: center;
 }
 
-.portfolioItem2{
+.portfolioItem2 {
     background-image: url(portfolio5.jpeg);
     background-size: cover;
     background-position: center;
 }
-.portfolioItem3{
+
+.portfolioItem3 {
     background-image: url(portfolio3.jpeg);
     background-size: cover;
     background-position: center;
 }
-.portfolioItem4{
+
+.portfolioItem4 {
     background-image: url(portfolio4.jpeg);
     background-size: cover;
     background-position: center;
 }
-.portfolioItem5{
+
+.portfolioItem5 {
     background-image: url(portfolio2.jpeg);
     background-size: cover;
     background-position: center;
@@ -354,7 +357,8 @@ form input:focus {
 }
 
 #submitButton {
-    width: 8vw;
+    min-width: 15vw;
+    max-width: 15vw;
     padding: 0;
     color: white;
     font-weight: bold;
